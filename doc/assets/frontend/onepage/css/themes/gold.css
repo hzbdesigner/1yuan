@@ -1,0 +1,102 @@
+a, a:focus, a:hover, a:active {
+  color: #b18f72;
+}
+.ab-cirlce{
+  background: #eee !important;
+  color:#b18f72 !important;
+}
+a:hover {
+  color: #b18f72;
+}
+::-moz-selection {
+  color: #fff;
+  background: #b18f72;
+}
+::selection {
+  color: #fff;
+  background: #b18f72;
+}
+.header-navigation a:hover,
+.header-navigation li.current a {
+  color: #b18f72;
+}
+.tb-socio .fa:hover {
+  color: #b18f72;
+  border: solid 1px #b18f72;
+}
+.carousel-indicators li.active {
+  background: #b18f72;
+}
+.go2top:hover {
+  border: solid 2px #b18f72;
+  color: #b18f72;
+}
+.content h1 strong, .content h2 strong, .content h3 strong, .content h4 strong {
+  color: #b18f72;
+}
+.slider-item-1 .large_bold_white span,
+.slider-item-2 .large_bold_white span {
+  color: #b18f72;
+}
+.tp-caption a {
+    color: #FF7302;
+}
+.services-block .fa {
+  background: #b18f72;
+}
+.services-block .fa:after {
+  border-top: 9px solid #b18f72;
+}
+.team-block em {
+  color: #b18f72;
+}
+.portfolio-block .item > a {
+  background: rgba(177,143,114,0.9);
+}
+.choose-us-block .panel-default .accordion-toggle:before {
+  background-color: #b18f72;
+}
+.choose-us-block .panel-default .collapsed:before {
+  background-color: #495764;/* black */
+}
+.choose-us-block .panel-default .panel-title:hover .collapsed:before {
+  background-color: #b18f72;
+}
+.btn-primary {
+  background: #E94D1C;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #cc3304;
+}
+.facts-block .item {
+  background: rgba(255, 99, 77, 0.92);
+}
+.pi-price strong {
+  background: #b18f72;
+}
+.pi-price strong:after {
+  border-top: 9px solid #b18f72;
+}
+.pricing-content .list-unstyled li i {
+  color: #b18f72;
+}
+.pricing-footer .btn-default:hover,
+.pricing-footer .btn-default:active {
+  background: #b18f72;
+}
+.portfolio-block .item b:hover {
+  color: #b18f72;
+}
+@media (max-width: 1024px) {
+	.header-mobi-ext .header-navigation a:hover,
+	.header-mobi-ext .header-navigation li.current a{
+	  background-color: #b18f72;
+	  color: #fff !important;
+	}
+}
+.header .mobi-toggler:hover {
+  background-color: #b18f72;
+  border-color: #b18f72;
+}
