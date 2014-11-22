@@ -410,6 +410,9 @@ form.refund-apply {
 
 .bar-header-index {
   border-bottom: 1px solid #eee; }
+  .bar-header-index .box-link {
+    padding-top: 7px;
+    padding-bottom: 8px; }
   .bar-header-index .title {
     font-size: 18px; }
   .bar-header-index .icon {
