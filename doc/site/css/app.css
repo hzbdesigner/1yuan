@@ -179,6 +179,10 @@ a:hover {
   height: 40px;
   line-height: 40px; }
 
+.btn-45 {
+  height: 45px;
+  line-height: 45px; }
+
 .btn-35 {
   height: 35px;
   line-height: 35px; }
@@ -186,6 +190,10 @@ a:hover {
 .btn-30 {
   height: 30px;
   line-height: 30px; }
+
+.btn-25 {
+  height: 25px;
+  line-height: 25px; }
 
 .btn-default {
   padding: 10px;
@@ -585,15 +593,90 @@ form.refund-apply {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px; }
 
+div.list-article-comment .row-table {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px; }
+div.list-article-comment .col-table-cell {
+  background: transparent; }
+  div.list-article-comment .col-table-cell.avatar {
+    padding-right: 10px;
+    vertical-align: top; }
+    div.list-article-comment .col-table-cell.avatar img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50em; }
+  div.list-article-comment .col-table-cell.content {
+    width: 100%; }
+    div.list-article-comment .col-table-cell.content .header {
+      height: 25px;
+      line-height: 25px; }
+      div.list-article-comment .col-table-cell.content .header:before, div.list-article-comment .col-table-cell.content .header:after {
+        content: " ";
+        display: table; }
+      div.list-article-comment .col-table-cell.content .header:after {
+        clear: both; }
+      div.list-article-comment .col-table-cell.content .header .name {
+        float: left;
+        font-size: 14px;
+        color: #000; }
+      div.list-article-comment .col-table-cell.content .header .actions {
+        float: right;
+        padding-right: 10px; }
+        div.list-article-comment .col-table-cell.content .header .actions a {
+          color: #999; }
+    div.list-article-comment .col-table-cell.content .text {
+      font-size: 13px;
+      line-height: 25px; }
+    div.list-article-comment .col-table-cell.content .bottom {
+      color: #999;
+      font-size: 12px;
+      line-height: 20px; }
+      div.list-article-comment .col-table-cell.content .bottom a {
+        color: #999;
+        margin-right: 6px;
+        margin-left: 6px; }
+
+.list-group.list-article-tag {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .list-group.list-article-tag .list-group-item {
+    padding: 0;
+    border-top: none;
+    border-right: none; }
+    .list-group.list-article-tag .list-group-item a.box-list {
+      margin: 0px;
+      margin-bottom: 0px; }
+      .list-group.list-article-tag .list-group-item a.box-list .img-wrapper {
+        height: 100px;
+        overflow: hidden; }
+        .list-group.list-article-tag .list-group-item a.box-list .img-wrapper img {
+          width: 100%;
+          height: auto; }
+      .list-group.list-article-tag .list-group-item a.box-list .title {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        bottom: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: #fff;
+        background: #000;
+        padding: 3px 6px; }
+
 .list-group.list-article-related {
   padding-left: 5px;
   padding-right: 5px; }
   .list-group.list-article-related .list-group-item {
     padding: 0;
     border-top: none;
-    border-right: none; }
+    border-right: none;
+    padding-right: 5px;
+    padding-left: 5px; }
     .list-group.list-article-related .list-group-item a {
-      margin: 5px;
+      margin: 5px 0px;
       margin-bottom: 10px; }
       .list-group.list-article-related .list-group-item a .img-wrapper {
         height: 145px;
@@ -606,6 +689,32 @@ form.refund-apply {
         color: #333;
         line-height: 20px;
         margin-top: 5px; }
+
+.list-group.list-tag-related {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .list-group.list-tag-related .list-group-item {
+    padding: 0;
+    border-top: none;
+    border-right: none;
+    margin: 5px; }
+    .list-group.list-tag-related .list-group-item .box-list {
+      padding: 0; }
+      .list-group.list-tag-related .list-group-item .box-list .img-wrapper {
+        height: 100px;
+        overflow: hidden; }
+        .list-group.list-tag-related .list-group-item .box-list .img-wrapper img {
+          width: 100%;
+          height: auto; }
+      .list-group.list-tag-related .list-group-item .box-list .title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: #fff;
+        background: #000;
+        padding: 3px 6px; }
 
 .list-group.list-article-index .list-group-item {
   padding: 0;
@@ -647,61 +756,103 @@ form.refund-apply {
           margin-right: 5px; }
 
 .list-group.list-article-category {
-  margin-top: 5px; }
+  background: #000;
+  padding-bottom: 10px; }
   .list-group.list-article-category .col-xs-6 {
-    padding: 5px 10px; }
+    padding: 10px 10px 0px; }
     @media (max-width: 639px) {
       .list-group.list-article-category .col-xs-6:nth-child(2n+1) {
-        padding-right: 5px; }
-      .list-group.list-article-category .col-xs-6:nth-child(2n) {
-        padding-left: 5px; } }
-  .list-group.list-article-category .list-group-item a.box-list {
+        padding-right: 0px; } }
+  .list-group.list-article-category .list-group-item .box-list {
     padding: 0; }
-    .list-group.list-article-category .list-group-item a.box-list .img-wrapper {
+    .list-group.list-article-category .list-group-item .box-list .img-wrapper {
       width: 100%;
-      height: 120px;
+      height: 100px;
       position: relative;
       overflow: hidden; }
-      .list-group.list-article-category .list-group-item a.box-list .img-wrapper img {
+      .list-group.list-article-category .list-group-item .box-list .img-wrapper img {
         width: 100%;
         height: auto; }
-      .list-group.list-article-category .list-group-item a.box-list .img-wrapper .layer {
+      .list-group.list-article-category .list-group-item .box-list .img-wrapper .layer {
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.4); }
-        .list-group.list-article-category .list-group-item a.box-list .img-wrapper .layer .cate {
+        background: rgba(0, 0, 0, 0.55); }
+        .list-group.list-article-category .list-group-item .box-list .img-wrapper .layer .cate {
           position: absolute;
           left: 0;
           right: 0;
           bottom: 0;
           top: 0;
           margin: auto;
-          height: 80px;
+          height: 70px;
           width: 100%;
           text-align: center; }
-          .list-group.list-article-category .list-group-item a.box-list .img-wrapper .layer .cate .cate-title {
-            font-size: 22px;
+          .list-group.list-article-category .list-group-item .box-list .img-wrapper .layer .cate .cate-title {
+            font-size: 20px;
             color: #fff;
-            line-height: 40px;
+            line-height: 35px;
             font-weight: 200;
             letter-spacing: 2px; }
-    .list-group.list-article-category .list-group-item a.box-list .caption {
+    .list-group.list-article-category .list-group-item .box-list .caption {
       text-align: center;
       background: #fff;
-      padding: 10px 0px;
-      padding-bottom: 20px; }
-      .list-group.list-article-category .list-group-item a.box-list .caption .title {
-        font-size: 20px;
-        line-height: 40px;
-        color: #000; }
-      .list-group.list-article-category .list-group-item a.box-list .caption .action {
-        padding-left: 10px;
-        padding-right: 10px; }
-        .list-group.list-article-category .list-group-item a.box-list .caption .action .btn {
-          font-size: 12px; }
+      padding: 10px 0px; }
+      .list-group.list-article-category .list-group-item .box-list .caption .action {
+        padding: 0;
+        height: 25px;
+        line-height: 25px; }
+        .list-group.list-article-category .list-group-item .box-list .caption .action .btn {
+          font-size: 10px;
+          padding-left: 8px;
+          padding-right: 8px; }
+
+.list-group.list-article-tag {
+  background: #000;
+  padding-bottom: 0px; }
+  .list-group.list-article-tag .col-xs-3 {
+    padding: 0px; }
+  .list-group.list-article-tag .list-group-item .box-list {
+    padding: 0; }
+    .list-group.list-article-tag .list-group-item .box-list .img-wrapper {
+      width: 100%;
+      height: 80px;
+      position: relative;
+      overflow: hidden; }
+      .list-group.list-article-tag .list-group-item .box-list .img-wrapper img {
+        width: 100%;
+        height: auto; }
+      .list-group.list-article-tag .list-group-item .box-list .img-wrapper .layer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: transparent; }
+        .list-group.list-article-tag .list-group-item .box-list .img-wrapper .layer .cate {
+          position: absolute;
+          background: #000;
+          padding: 0px 5px;
+          line-height: 20px;
+          left: 0px;
+          bottom: 0px;
+          font-size: 12px;
+          text-align: left;
+          color: #fff; }
+    .list-group.list-article-tag .list-group-item .box-list .caption {
+      text-align: center;
+      background: #fff;
+      padding: 10px 0px; }
+      .list-group.list-article-tag .list-group-item .box-list .caption .action {
+        padding: 0;
+        height: 25px;
+        line-height: 25px; }
+        .list-group.list-article-tag .list-group-item .box-list .caption .action .btn {
+          font-size: 10px;
+          padding-left: 8px;
+          padding-right: 8px; }
 
 .list-group-item.menu {
   height: 50px;
@@ -1479,7 +1630,8 @@ form.refund-apply {
 .section-banner-article-detail {
   position: relative;
   overflow: hidden;
-  max-height: 320px; }
+  max-height: 320px;
+  min-height: 160px; }
   .section-banner-article-detail img {
     width: 100%;
     height: auto; }
@@ -1488,15 +1640,48 @@ form.refund-apply {
     left: 6px;
     right: 6px;
     top: 6px; }
+  .section-banner-article-detail .layer-actions {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 100; }
+    .section-banner-article-detail .layer-actions .icon {
+      display: inline-block;
+      margin-right: 10px;
+      height: 80px;
+      width: 80px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      border-radius: 50em; }
+      .section-banner-article-detail .layer-actions .icon i {
+        font-size: 24px;
+        padding-top: 20px; }
+      .section-banner-article-detail .layer-actions .icon .num {
+        line-height: 25px;
+        font-size: 12px; }
   .section-banner-article-detail .layer-bottom {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     padding-top: 20px;
-    padding-bottom: 10px;
-    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.85), transparent);
+    padding-bottom: 6px;
+    min-height: 50px;
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.75), transparent);
     padding-left: 6px; }
+    .section-banner-article-detail .layer-bottom .data {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
+      font-weight: thin; }
+      .section-banner-article-detail .layer-bottom .data span {
+        margin-right: 6px; }
     .section-banner-article-detail .layer-bottom .tag {
       color: rgba(255, 255, 255, 0.8);
       line-height: 25px;
@@ -1511,6 +1696,7 @@ form.refund-apply {
 
 .section-caption {
   padding: 5px;
+  padding-bottom: 5px;
   padding-left: 7px;
   border-bottom: 1px solid #eee;
   background: #fff; }
@@ -1518,7 +1704,7 @@ form.refund-apply {
     padding-top: 7px;
     font-size: 25px;
     color: #000000;
-    line-height: 32px;
+    line-height: 35px;
     letter-spacing: 1px;
     font-weight: bold; }
   .section-caption .data {
@@ -1562,13 +1748,28 @@ form.refund-apply {
       height: auto; }
 
 .section-article-related {
-  background: #f3f3f3; }
+  background: #eee;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px; }
   .section-article-related .article-section-header {
     font-size: 16px;
     line-height: 22px;
     margin-left: 10px;
     color: #333;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bolder; }
+
+.section-tag-related {
+  background: #eee;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .section-tag-related .article-section-header {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 10px;
+    color: #333;
     margin-bottom: 5px;
     font-weight: bolder; }
 
